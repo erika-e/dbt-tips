@@ -118,6 +118,9 @@ To run use `dbt test -m tag:snapshot` [h/t](https://getdbt.slack.com/archives/C0
 
 * [dbt guide to snapshots](https://blog.getdbt.com/track-data-changes-with-dbt-snapshots/)
 * [Handling hard deletes in snapshots](https://discourse.getdbt.com/t/handling-hard-deletes-from-source-tables-in-snapshots/1005/2)
+* [Handling late arriving records in snapshots](https://discourse.getdbt.com/t/handling-late-arriving-records-in-fivetran-synced-snapshots/1641)
+* [Adding a column to a snapshot with `check_cols` strategy](https://discourse.getdbt.com/t/migrating-a-snapshot-after-adding-a-check-col/485)
+* [Use dynamic schemas for snapshots](https://discourse.getdbt.com/t/using-dynamic-schemas-for-snapshots/1070)
 
 ## VS Code
 
