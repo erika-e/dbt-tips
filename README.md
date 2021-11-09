@@ -215,7 +215,7 @@ function dbtah() {
 {%- set old_etl_relation=adapter.get_relation(
       database="ANALYTICS",
       schema=prod_schema,
-      identifier=test_model
+      identifier=my_model
 ) -%}
 
 {# Generate the audit query - update exclude_columns & primary_key as needed #}
