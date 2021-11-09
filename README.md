@@ -218,7 +218,7 @@ function dbtah() {
       identifier=my_model
 ) -%}
 
-{# Generate the audit query - update exclude_columns & primary_key as needed #}
+{# Generate the audit query - update primary key as needed #}
 {{ audit_helper.compare_relations(
     a_relation=old_etl_relation,
     b_relation=dbt_relation,
@@ -226,7 +226,7 @@ function dbtah() {
 ) }}
 ```
 
-To run use `dbtah my_target_model`
+To run use `dbtah my_target_model`. Template heavily inspired by a tool created by [Lewis Davies](https://github.com/LewisDavies)
 
 ## Git Tips
 
