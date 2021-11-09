@@ -5,6 +5,7 @@ Collection of dbt Tips and Tricks
 ## Skip to a Section
 
 * [Toolbox](#Toolbox) - basic tools that make working with dbt way easier
+* [New to dbt](#New-to-the-dbt-Ecosystem?-Start-Here-with-Beginner-Tutorials) - start here for beginner tutorials
 * [dbt CLI](#dbt-CLI) - tips and tricks for the dbt CLI
 * [General Command Line](#Command-Line) - useful tricks for model and yml file manipulation from the command line
 * [Git Tips](#Git-Tips) - useful in large dbt projects
