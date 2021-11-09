@@ -22,10 +22,19 @@ Collection of dbt Tips and Tricks
 * [Overriding default schema and table names, using model file names as sources for schema and table names](https://discourse.getdbt.com/t/extracting-schema-and-model-names-from-the-filename/575)
 * [Creating date dimensions tables with dbt](https://discourse.getdbt.com/t/date-dimensions/735/4)
 * [Examples of custom schema tests](https://discourse.getdbt.com/t/examples-of-custom-schema-tests/181/5)
-* [Sessionization Best Practices for Large Event Tables](https://app.slack.com/client/T0VLPD22H/C0VLZPLAE/thread/C0VLZPLAE-1620406666.325100)
+* [Sessionization best practices for large event tables](https://app.slack.com/client/T0VLPD22H/C0VLZPLAE/thread/C0VLZPLAE-1620406666.325100)
 * [Updating a global dictionary value with Jinja](https://getdbt.slack.com/archives/CJN7XRF1B/p1608230420178900?thread_ts=1608156760.169900&cid=CJN7XRF1B)
 * [None and undefined in logical tests in Jinja](https://getdbt.slack.com/archives/C2JRRQDTL/p1622223139233800?thread_ts=1622222319.232500&cid=C2JRRQDTL)
 * [Analyzing dbt project performance with artifacts](https://discourse.getdbt.com/t/analyzing-fishtowns-dbt-project-performance-with-artifacts/2214)
+* [dbt course refactoring legacy SQL to dbt](https://blog.getdbt.com/sql-refactoring-course/)
+* [dbt analytics engineering guide](https://www.getdbt.com/analytics-engineering/)
+
+### New to the dbt Ecosystem? Start Here with Beginner Tutorials
+
+* dbt - start with the [Funadmentals Course](https://courses.getdbt.com/courses/fundamentals)
+* SQL - check out the [Mode SQL tutorial](https://mode.com/sql-tutorial/)
+* git - try [Think Like Git](http://think-like-a-git.net/) if you prefer to learn by reading, or [Learn Git Branching](https://learngitbranching.js.org/?locale=en_US) if you prefer something visual and interactive
+* Jinja - check out [these tutorials by Prezemek Rogala](https://ttl255.com/jinja2-tutorial-part-1-introduction-and-variable-substitution/) who wrote the live parser I recommend
 
 ## Toolbox
 
@@ -163,6 +172,60 @@ When you're happy with your output, add `-i ''` to the start of your command. Th
 2. open a new terminal window to run dbt docs serve
 3. just always have the docs open in the background - re run dbt docs generate in first terminal and refresh if needed
 [h/t](https://twitter.com/clairebcarroll/status/1397734400134164480)
+
+### Shell Script Examples for zsh
+
+```zsh
+# Functions
+function dbtr() {
+   dbt run -m $1 --fail-fast
+   say done
+}
+
+function dbtrt() {
+    dbt run -m $1 && dbt test -m $1
+    say done
+}
+
+```
+
+### Shell Script to Compile Audit Helper
+
+Note that the below has only been tested on a mac, and requires you to create a SQL file called `audit_helper_template` in the `analysis` folder of your dbt project.
+
+```zsh
+
+function dbtah() {
+    gsed -i "s/my_model/$1/" analysis/audit_helper_template.sql
+    dbt compile -m audit_helper_template
+    cat target/compiled/aula_data_models/analysis/audit_helper_template.sql | awk NF | pbcopy
+    gsed -i "s/$1/my_model/" analysis/audit_helper_template.sql
+    say copy pasta
+}
+
+```
+
+```SQL
+
+{%- set audit_model = "my_model" -%}
+{%- set prod_schema = "production" -%}
+{%- set dbt_relation = ref(audit_model) -%}
+
+{%- set old_etl_relation=adapter.get_relation(
+      database="ANALYTICS",
+      schema=prod_schema,
+      identifier=test_model
+) -%}
+
+{# Generate the audit query - update exclude_columns & primary_key as needed #}
+{{ audit_helper.compare_relations(
+    a_relation=old_etl_relation,
+    b_relation=dbt_relation,
+    primary_key="primary_key_update_before_running"
+) }}
+```
+
+To run use `dbtah my_target_model`
 
 ## Git Tips
 
