@@ -29,6 +29,8 @@ Collection of dbt Tips and Tricks
 * [Analyzing dbt project performance with artifacts](https://discourse.getdbt.com/t/analyzing-fishtowns-dbt-project-performance-with-artifacts/2214)
 * [dbt course refactoring legacy SQL to dbt](https://blog.getdbt.com/sql-refactoring-course/)
 * [dbt analytics engineering guide](https://www.getdbt.com/analytics-engineering/)
+* [Clean up orphaned tables and views without matching current models](https://getdbt.slack.com/archives/C2JRRQDTL/p1636438321428900)
+* [Use a specific warehouse to run certain models (Snowflake)](https://docs.getdbt.com/reference/resource-configs/snowflake-configs#configuring-virtual-warehouses) [h/t](https://getdbt.slack.com/archives/CJN7XRF1B/p1636547281170700)
 
 ### New to the dbt Ecosystem? Start Here with Beginner Tutorials
 
@@ -44,6 +46,7 @@ Collection of dbt Tips and Tricks
 * [dbt-codegen](https://github.com/fishtown-analytics/dbt-codegen) : macros that generate dbt code to the command line [h/t](https://twitter.com/JayPeeDevlin/status/1397743525270261766)
 * [dbt-audit-helper](https://github.com/fishtown-analytics/dbt-audit-helper) : Zen and the art of data auditing. This package will change your life.
 * [pre-commit-dbt](https://github.com/offbi/pre-commit-dbt) : Package of dbt pre-commit hooks that allow you to check quality of dbt project documentation, tests, etc
+* [dbt-helper](https://github.com/mikekaminsky/dbt-helper) : Utility functions to compare WH to dbt, create schema files, and list dependencies
 * [live Jinja Parser](https://j2live.ttl255.com/) : Useful tool for writing complex Jinja, does not include dbt-specific Jinja functions
 * [yaml Checker](https://yamlchecker.com/) : yaml syntax validator
 
