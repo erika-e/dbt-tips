@@ -32,7 +32,7 @@ Collection of dbt Tips and Tricks
 
 ### New to the dbt Ecosystem? Start Here with Beginner Tutorials
 
-* dbt - start with the [Funadmentals Course](https://courses.getdbt.com/courses/fundamentals)
+* dbt - start with the [Fundamentals Course](https://courses.getdbt.com/courses/fundamentals)
 * SQL - check out the [Mode SQL tutorial](https://mode.com/sql-tutorial/)
 * git - try [Think Like Git](http://think-like-a-git.net/) if you prefer to learn by reading, or [Learn Git Branching](https://learngitbranching.js.org/?locale=en_US) if you prefer something visual and interactive
 * Jinja - check out [these tutorials by Prezemek Rogala](https://ttl255.com/jinja2-tutorial-part-1-introduction-and-variable-substitution/) who wrote the live parser I recommend
@@ -91,7 +91,7 @@ or
 
 ### Run Tests By Materialization
 
-`dbt test -m config.materialized:snapshot` or `dbt test -m config.materialzied:seed` not guarenteed to be supported [h/t](https://getdbt.slack.com/archives/C01UM2N7814/p1624369845111600?thread_ts=1624192939.105900&cid=C01UM2N7814) and caveat
+`dbt test -m config.materialized:snapshot` or `dbt test -m config.materialzied:seed` not guaranteed to be supported [h/t](https://getdbt.slack.com/archives/C01UM2N7814/p1624369845111600?thread_ts=1624192939.105900&cid=C01UM2N7814) and caveat
 
 ### Run Tests by Tag After Tagging Models With a Specific Materialization
 
@@ -106,7 +106,7 @@ To run use `dbt test -m tag:snapshot` [h/t](https://getdbt.slack.com/archives/C0
 
 ### Run A Macro With Arguements
 
-`dbt run-operation my_macro --args '{"myarg1":"arrrgh", "myarg2":"aaaaaaargh"}'`
+`dbt run-operation my_macro --args '{"myarg1":"arrrgh", "myarg2":"aaaaaaaargh"}'`
 
 ### dbt Keyboard Shortcuts
 
@@ -309,7 +309,7 @@ what to execute otherwise
 
 ## dbt Macros and dbt Specific Jinja
 
-### When to Use if excute in Macros
+### When to Use if execute in Macros
 
 [When you have queries that need to execute during the parse phase!](https://docs.getdbt.com/reference/dbt-jinja-functions/execute)
 
