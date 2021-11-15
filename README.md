@@ -1,6 +1,6 @@
 # dbt-tips
 
-Collection of dbt Tips and Tricks
+Collection of dbt tips and tricks. Includes links to the dbt slack community which you can [join here](https://www.getdbt.com/community/join-the-community). See something that needs to be changed? See [contributing guidelines](CONTRIBUTING.md).
 
 ## Skip to a Section
 

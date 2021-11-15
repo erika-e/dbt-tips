@@ -1,6 +1,6 @@
 # Contributing
 
-No one is perfect. It's possible that some of these tips are outdated or not as optimal as they could be. To contribute to this repo, fork it, make changes, and open a pull request.
+No one is perfect. It's possible that some of these tips are outdated or not as optimal as they could be. To contribute to this repo, fork it, make changes, and open a pull request. If you see something you don't know how to fix, you can open an issue.
 
 ## Contributions
 
