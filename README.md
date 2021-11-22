@@ -31,6 +31,8 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [dbt analytics engineering guide](https://www.getdbt.com/analytics-engineering/)
 * [Clean up orphaned tables and views without matching current models](https://getdbt.slack.com/archives/C2JRRQDTL/p1636438321428900)
 * [Use a specific warehouse to run certain models (Snowflake)](https://docs.getdbt.com/reference/resource-configs/snowflake-configs#configuring-virtual-warehouses) [h/t](https://getdbt.slack.com/archives/CJN7XRF1B/p1636547281170700)
+* [Using macros to manage UDFs (user defined functions)](https://getdbt.slack.com/archives/CJN7XRF1B/p1637366753295200)
+* [dbt slack thread on approaches to CI builds and testing](https://getdbt.slack.com/archives/CMZ2Q9MA9/p1637248429101700)
 
 ### New to the dbt Ecosystem? Start Here with Beginner Tutorials
 
