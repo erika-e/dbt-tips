@@ -200,25 +200,40 @@ Note that the below has only been tested on a mac, and requires you to create a 
 ```zsh
 
 function dbtah() {
-    gsed -i "s/my_model/$1/" analysis/audit_helper_template.sql
+    # substitute the model name from the arguement
+    gsed -i "s/model_to_audit/$1/" analysis/audit_helper_template.sql
+    # enable the audit_helper_template
+    gsed -i 's/enabled = false/enabled = true/' analysis/audit_helper_template.sql
+    # compile
     dbt compile -m audit_helper_template
-    cat path/to/target/directory | awk NF | pbcopy
-    gsed -i "s/$1/my_model/" analysis/audit_helper_template.sql
+    cat target/compiled/*/analysis/audit_helper_template.sql | awk NF | pbcopy
+    # modify the template back to the defaults
+    gsed -i 's/enabled = true/enabled = false/' analysis/audit_helper_template.sql
+    gsed -i "s/$1/model_to_audit/" analysis/audit_helper_template.sql
     say copy pasta
 }
 
 ```
 
 ```SQL
+-- The model needs to be disabled so it will be ignored while in typical compilation
+-- This is required because dbt won't find a node named 'model_to_audit'
+-- Substitute the correct production schema and database for your environment
+    {{
+      config(
+        enabled = false,
+        )
+    }}
 
-{%- set audit_model = "my_model" -%}
-{%- set prod_schema = "production" -%}
+{%- set audit_model = "model_to_audit" -%}
+{%- set prod_schema = "prod_schema_name" -%}
+{%- set dbt_database = "prod_database_name" -%}
 {%- set dbt_relation = ref(audit_model) -%}
 
 {%- set old_etl_relation=adapter.get_relation(
-      database="ANALYTICS",
+      database=dbt_database,
       schema=prod_schema,
-      identifier=my_model
+      identifier=audit_model
 ) -%}
 
 {# Generate the audit query - update primary key as needed #}
