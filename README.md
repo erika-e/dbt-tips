@@ -202,7 +202,7 @@ Note that the below has only been tested on a mac, and requires you to create a 
 function dbtah() {
     gsed -i "s/my_model/$1/" analysis/audit_helper_template.sql
     dbt compile -m audit_helper_template
-    cat target/compiled/aula_data_models/analysis/audit_helper_template.sql | awk NF | pbcopy
+    cat path/to/target/directory | awk NF | pbcopy
     gsed -i "s/$1/my_model/" analysis/audit_helper_template.sql
     say copy pasta
 }
