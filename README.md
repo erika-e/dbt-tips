@@ -149,6 +149,7 @@ This section is stubby for now -- but I'd welcome contributions for how to make 
 
 * [Guide to using dbt in VSCode with lots of great setup tips](https://dbt-msft.github.io/dbt-msft-docs/docs/guides/vscode_setup/)
 * [vscode-dbt-power-user](https://marketplace.visualstudio.com/items?itemName=innoverio.vscode-dbt-power-user)
+* dbt-power-user has commands for `Show Compiled SQL` and `Show Run SQL` [h/t](https://discourse.getdbt.com/t/how-we-set-up-our-computers-for-working-on-dbt-projects/243/18)
 * [brew installed dbt `dbt is not installed` message in VS Code](https://getdbt.slack.com/archives/C2JRRQDTL/p1635524229176400)
 
 ## Command Line
