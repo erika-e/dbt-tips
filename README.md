@@ -4,8 +4,9 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 
 ## Skip to a Section
 
-* [Toolbox](#Toolbox) - basic tools that make working with dbt way easier
 * [New to dbt](#New-to-the-dbt-Ecosystem?-Start-Here-with-Beginner-Tutorials) - start here for beginner tutorials
+* [Toolbox](#Toolbox) - basic tools that make working with dbt way easier
+* [Infrastructure and Deploying dbt](#Infrastructure-and-Deploying-dbt)
 * [dbt CLI](#dbt-CLI) - tips and tricks for the dbt CLI
 * [General Command Line](#Command-Line) - useful tricks for model and yml file manipulation from the command line
 * [Git Tips](#Git-Tips) - useful in large dbt projects
@@ -51,6 +52,11 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [dbt-helper](https://github.com/mikekaminsky/dbt-helper) : Utility functions to compare WH to dbt, create schema files, and list dependencies
 * [live Jinja Parser](https://j2live.ttl255.com/) : Useful tool for writing complex Jinja, does not include dbt-specific Jinja functions
 * [yaml Checker](https://yamlchecker.com/) : yaml syntax validator
+
+## Infrastructure and Deploying dbt
+
+* [dbt-github-workflow](https://github.com/slve/dbt-github-workflow) - example CI / CD pipeline with BigQuery, GCP, and Airflow
+* [Example Meltano deploment](https://github.com/mattarderne/meltano-batch) - using AWS and Terraform
 
 ## dbt CLI
 
