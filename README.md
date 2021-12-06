@@ -52,6 +52,7 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [dbt-helper](https://github.com/mikekaminsky/dbt-helper) : Utility functions to compare WH to dbt, create schema files, and list dependencies
 * [live Jinja Parser](https://j2live.ttl255.com/) : Useful tool for writing complex Jinja, does not include dbt-specific Jinja functions
 * [yaml Checker](https://yamlchecker.com/) : yaml syntax validator
+* [palm](https://github.com/palmetto/palm-cli) and [palm-dbt](https://github.com/palmetto/palm-dbt): automate dbt workflows, expedite onboarding, and containerize your dbt project
 
 ## Infrastructure and Deploying dbt
 
