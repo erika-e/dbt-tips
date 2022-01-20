@@ -53,11 +53,13 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [live Jinja Parser](https://j2live.ttl255.com/) : Useful tool for writing complex Jinja, does not include dbt-specific Jinja functions
 * [yaml Checker](https://yamlchecker.com/) : yaml syntax validator
 * [palm](https://github.com/palmetto/palm-cli) and [palm-dbt](https://github.com/palmetto/palm-dbt): automate dbt workflows, expedite onboarding, and containerize your dbt project
+* [dagrules](https://discourse.getdbt.com/t/introducing-dagrules-a-linter-for-your-dag/3574) : A linter to enforce DAG organization conventions in your project [h/t](https://getdbt.slack.com/archives/C01NH3F2E05/p1641403576388400?thread_ts=1641403576.388400&cid=C01NH3F2E05)
 
 ## Infrastructure and Deploying dbt
 
 * [dbt-github-workflow](https://github.com/slve/dbt-github-workflow) - example CI / CD pipeline with BigQuery, GCP, and Airflow
 * [Example Meltano deploment](https://github.com/mattarderne/meltano-batch) - using AWS and Terraform
+* [Slim CI in Docker for BigQuery](https://medium.com/teads-engineering/setup-a-slim-ci-for-dbt-with-bigquery-and-docker-ce8e0a1a38f) [h/t](https://getdbt.slack.com/archives/C01NH3F2E05/p1639477888286000?thread_ts=1639477888.286000&cid=C01NH3F2E05)
 
 ## dbt CLI
 
@@ -116,7 +118,7 @@ snapshots:
 
 To run use `dbt test -m tag:snapshot` [h/t](https://getdbt.slack.com/archives/C01UM2N7814/p1624192939105900)
 
-### Run A Macro With Arguements
+### Run A Macro With Arguments
 
 `dbt run-operation my_macro --args '{"myarg1":"arrrgh", "myarg2":"aaaaaaaargh"}'`
 
@@ -143,6 +145,12 @@ To run use `dbt test -m tag:snapshot` [h/t](https://getdbt.slack.com/archives/C0
 * [Handling late arriving records in snapshots](https://discourse.getdbt.com/t/handling-late-arriving-records-in-fivetran-synced-snapshots/1641)
 * [Adding a column to a snapshot with `check_cols` strategy](https://discourse.getdbt.com/t/migrating-a-snapshot-after-adding-a-check-col/485)
 * [Use dynamic schemas for snapshots](https://discourse.getdbt.com/t/using-dynamic-schemas-for-snapshots/1070)
+
+## dbt Test Examples
+
+* [Combine unique_where and combination_of_columns](https://getdbt.slack.com/archives/C01UM2N7814/p1639159790186900)
+* [Opposite of accepted_values](https://getdbt.slack.com/archives/C01UM2N7814/p1640690640249000)
+* [Store test failures in a custom schema](https://getdbt.slack.com/archives/C01UM2N7814/p1638983308171300)
 
 ## VS Code
 
@@ -210,7 +218,7 @@ Note that the below has only been tested on a mac, and requires you to create a 
 ```zsh
 
 function dbtah() {
-    # substitute the model name from the arguement
+    # substitute the model name from the argument
     gsed -i "s/model_to_audit/$1/" analysis/audit_helper_template.sql
     # enable the audit_helper_template
     gsed -i 's/enabled = false/enabled = true/' analysis/audit_helper_template.sql
