@@ -60,6 +60,7 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [dbt-github-workflow](https://github.com/slve/dbt-github-workflow) - example CI / CD pipeline with BigQuery, GCP, and Airflow
 * [Example Meltano deploment](https://github.com/mattarderne/meltano-batch) - using AWS and Terraform
 * [Slim CI in Docker for BigQuery](https://medium.com/teads-engineering/setup-a-slim-ci-for-dbt-with-bigquery-and-docker-ce8e0a1a38f) [h/t](https://getdbt.slack.com/archives/C01NH3F2E05/p1639477888286000?thread_ts=1639477888.286000&cid=C01NH3F2E05)
+* [dbt-artifacts](https://github.com/brooklyn-data/dbt_artifacts) - Snowflake-specific dbt package that builds dimensional models from dbt artifacts and provides macros to upload artifacts to Snowflake
 
 ## dbt CLI
 
