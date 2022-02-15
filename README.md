@@ -34,6 +34,7 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [Use a specific warehouse to run certain models (Snowflake)](https://docs.getdbt.com/reference/resource-configs/snowflake-configs#configuring-virtual-warehouses) [h/t](https://getdbt.slack.com/archives/CJN7XRF1B/p1636547281170700)
 * [Using macros to manage UDFs (user defined functions)](https://getdbt.slack.com/archives/CJN7XRF1B/p1637366753295200)
 * [dbt slack thread on approaches to CI builds and testing](https://getdbt.slack.com/archives/CMZ2Q9MA9/p1637248429101700)
+* [The JaffleGaggle Story: Data Modeling for a Customer 360 View](https://docs.getdbt.com/blog/customer-360-view-identity-resolution)
 
 ### New to the dbt Ecosystem? Start Here with Beginner Tutorials
 
@@ -54,6 +55,7 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [yaml Checker](https://yamlchecker.com/) : yaml syntax validator
 * [palm](https://github.com/palmetto/palm-cli) and [palm-dbt](https://github.com/palmetto/palm-dbt): automate dbt workflows, expedite onboarding, and containerize your dbt project
 * [dagrules](https://discourse.getdbt.com/t/introducing-dagrules-a-linter-for-your-dag/3574) : A linter to enforce DAG organization conventions in your project [h/t](https://getdbt.slack.com/archives/C01NH3F2E05/p1641403576388400?thread_ts=1641403576.388400&cid=C01NH3F2E05)
+* [countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database): Useful dbt seed file source for geographic data and information [h/t](https://getdbt.slack.com/archives/D01SRMHH7QB/p1644944421664699)
 
 ## Infrastructure and Deploying dbt
 
@@ -61,6 +63,7 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [Example Meltano deploment](https://github.com/mattarderne/meltano-batch) - using AWS and Terraform
 * [Slim CI in Docker for BigQuery](https://medium.com/teads-engineering/setup-a-slim-ci-for-dbt-with-bigquery-and-docker-ce8e0a1a38f) [h/t](https://getdbt.slack.com/archives/C01NH3F2E05/p1639477888286000?thread_ts=1639477888.286000&cid=C01NH3F2E05)
 * [dbt-artifacts](https://github.com/brooklyn-data/dbt_artifacts) - Snowflake-specific dbt package that builds dimensional models from dbt artifacts and provides macros to upload artifacts to Snowflake
+* [slack thread coordinating dbt & Looker deployments](https://getdbt.slack.com/archives/C0VLZPLAE/p1643313047286400)
 
 ## dbt CLI
 
