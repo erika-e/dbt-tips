@@ -15,7 +15,7 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 
 ## dbt Concepts and Practices
 
-* [How dbtLabs stuctures dbt projects](https://discourse.getdbt.com/t/how-we-structure-our-dbt-projects/355)
+* [How dbtLabs stuctures dbt projects](https://docs.getdbt.com/guides/best-practices/how-we-structure/1-guide-overview) ([prior version](https://discourse.getdbt.com/t/how-we-structure-our-dbt-projects/355))
 * [dbtLabs dbt style guide](https://github.com/fishtown-analytics/corp/blob/master/dbt_style_guide.md)
 * [HowTheydbt](https://github.com/stumelius/howtheydbt) - repo of company specific dbt practice publications
 * [Overview of tests in dbt (updated for 0.20)](https://datacoves.com/post/an-overview-of-testing-options-in-dbt-data-build-tool)
