@@ -4,14 +4,14 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 
 ## Skip to a Section
 
-* [New to dbt](#New-to-the-dbt-Ecosystem?-Start-Here-with-Beginner-Tutorials) - start here for beginner tutorials
-* [Toolbox](#Toolbox) - basic tools that make working with dbt way easier
-* [Infrastructure and Deploying dbt](#Infrastructure-and-Deploying-dbt)
+* [New to dbt](#new-to-the-dbt-ecosystem?-start-here-with-beginner-tutorials) - start here for beginner tutorials
+* [Toolbox](#toolbox) - basic tools that make working with dbt way easier
+* [Infrastructure and Deploying dbt](#infrastructure-and-deploying-dbt)
 * [dbt CLI](#dbt-CLI) - tips and tricks for the dbt CLI
-* [General Command Line](#Command-Line) - useful tricks for model and yml file manipulation from the command line
-* [Git Tips](#Git-Tips) - useful in large dbt projects
-* [Jinja](#Jinja) - it's surprisingly hard to learn basic Jinja concepts
-* [dbt Macros and dbt Specific Jinja](#dbt-Macros-and-dbt-Specific-Jinja) - reference for dbt Macros and Jinja functions that come with dbt
+* [General Command Line](#command-line) - useful tricks for model and yml file manipulation from the command line
+* [Git Tips](#git-tips) - useful in large dbt projects
+* [Jinja](#jinja) - it's surprisingly hard to learn basic Jinja concepts
+* [dbt Macros and dbt Specific Jinja](#dbt-macros-and-dbt-specific-jinja) - reference for dbt Macros and Jinja functions that come with dbt
 
 ## dbt Concepts and Practices
 
