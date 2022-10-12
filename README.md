@@ -4,7 +4,7 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 
 ## Skip to a Section
 
-* [New to dbt](#new-to-the-dbt-ecosystem?-start-here-with-beginner-tutorials) - start here for beginner tutorials
+* [New to dbt](#new-to-the-dbt-ecosystem-start-here-with-beginner-tutorials) - start here for beginner tutorials
 * [Toolbox](#toolbox) - basic tools that make working with dbt way easier
 * [Infrastructure and Deploying dbt](#infrastructure-and-deploying-dbt)
 * [dbt CLI](#dbt-CLI) - tips and tricks for the dbt CLI
