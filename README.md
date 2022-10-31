@@ -37,7 +37,7 @@ Collection of dbt tips and tricks. Includes links to the dbt slack community whi
 * [The JaffleGaggle Story: Data Modeling for a Customer 360 View](https://docs.getdbt.com/blog/customer-360-view-identity-resolution)
 
 ### New to the dbt Ecosystem? Start Here with Beginner Tutorials
-
+* dbt - Understanding dbt with a real world scenario [A Beginner dbt tutorial](https://tipseason.com/dbt-tutorial-real-world-scenario-guide)
 * dbt - start with the [Fundamentals Course](https://courses.getdbt.com/courses/fundamentals)
 * SQL - check out the [Mode SQL tutorial](https://mode.com/sql-tutorial/)
 * git - try [Think Like Git](http://think-like-a-git.net/) if you prefer to learn by reading, or [Learn Git Branching](https://learngitbranching.js.org/?locale=en_US) if you prefer something visual and interactive
